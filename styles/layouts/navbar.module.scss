@@ -1,0 +1,20 @@
+.site-layout-content {
+  min-height: 680px;
+  padding: 24px;
+  background: #fff;
+}
+.logo {
+  width: 90px;
+  height: 58px;
+  margin-right: 80px;
+}
+.layouts-header{
+  padding: 0 calc((100vw - 1080px) / 2);
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+.layouts-menu{
+  border-bottom: none;
+}
