@@ -4,6 +4,7 @@ import Footer from './footer'
 import { Breadcrumb, Layout } from 'antd';
 import React from 'react';
 import style from '../styles/layouts/navbar.module.scss'
+
 const { Content } = Layout;
 
 export default function MyLayout({ children }:any) {
@@ -17,7 +18,6 @@ export default function MyLayout({ children }:any) {
             <Breadcrumb.Item>App</Breadcrumb.Item>
           </Breadcrumb>
           <div className={style['site-layout-content']}>
-            content
             <main>{children}</main>
           </div>
         </Content>
