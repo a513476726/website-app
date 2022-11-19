@@ -1,16 +1,12 @@
 import type { NextPage } from 'next'
 import Layouts from '../layouts/index'
-import dynamic from "next/dynamic";
-
-// 动态加载，不要服务端渲染
-const Login = dynamic(()=> import('./login'),{ ssr:false })
-const Other = dynamic(()=> import('./other'),{ ssr:false })
-
+import style from '@/styles/index/index.module.scss'
+import bg from '@/assets/videos/home-bg.mp4'
 const Home: NextPage = () => {
   return (
     <>
       <Layouts>
-        <video src={require('../assets/videos/home-bg.mp4').default }></video>
+        <video controls className={style['video-bg']} src={ 'https://www.apple.com/105/media/us/home/2022/42ee7f26-ec6c-4bdd-8cc5-2af5cd55cacb/anim/hero/largetall.webm' } autoPlay muted loop></video>
       </Layouts>
     </>
   )

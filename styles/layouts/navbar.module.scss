@@ -1,20 +1,44 @@
+.layout{
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+}
 .site-layout-content {
-  min-height: 680px;
-  padding: 24px;
+  min-height: 100vh;
   background: #fff;
 }
 .logo {
   width: 90px;
-  height: 58px;
-  margin-right: 80px;
+  margin: 0 100px;
+  font-size: 50px;
+  color: #fff;
 }
 .layouts-header{
   padding: 0 calc((100vw - 1080px) / 2);
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  box-shadow: 1px 1px 8px rgb(55 55 55 / 38%);
   display: flex;
+  backdrop-filter: saturate(170%) blur(8px);
+  background: #0000004a;
   align-items: center;
+  justify-content: flex-start;
 }
 .layouts-menu{
   border-bottom: none;
+  background: transparent;
+  width: 500px;
+  color: #fff;
+  :global(.ant-menu-item-selected){
+    color: #fff !important;
+    font-weight: bold;
+  }
+  :global(.ant-menu-item-selected::after){
+    border-bottom: 2px solid #fff !important;
+  }
+  :global(.ant-menu-item-active){
+    color: #40a9ff !important;
+  }
+  :global(.ant-menu-item-active::after){
+    border-bottom: 2px solid #40a9ff !important;
+  }
 }
