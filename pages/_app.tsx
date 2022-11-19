@@ -4,6 +4,7 @@ import 'antd/dist/antd.css';
 import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
+  console.log('第一次？')
   return <Component {...pageProps} />
 }
 
