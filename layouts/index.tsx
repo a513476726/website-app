@@ -6,8 +6,8 @@ import style from '@/styles/layouts/navbar.module.scss'
 export default function MyLayout({ children }:any) {
   const items = [
     { label: '首页', key: '/' }, // 菜单项务必填写 key
-    { label: '登录页', key: '/login' },
-    { label: '其他', key: '/other' },
+    { label: '手机自适应', key: '/mobile' },
+    { label: 'AntDesign', key: '/ant-design' },
   ];
   return (
     <>
